@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>
+            DTL
+        </title>
+        <link rel="stylesheet" href="style.css"> 
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+        <script src="script.js" defer></script>
+    </head>
+
+    <body>
+        <div class="top-background"></div>
+        <div class="header">
+            <div class="navbar">
+                <div class="icon">
+                    
+                </div>
+                <div class="menu">
+                    <ul>
+                        <li><a href="#">HOME</a></li>
+                        <li><a href="#">ABOUT</a></li>
+                        <li><a href="#">SERVICE</a></li>
+                        <li><a href="#">DESIGN</a></li>
+                        
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+
+      
+
+        <div class="centered-logo">
+            <div class="animated-text center-1">
+                THE REAL PARTY IS IN DOWNTOWN
+            </div>
+            
+
+            <img src="images/dtl logo.png" class="dtl-logo autoshow" alt="logo">
+           
+        </div>
+ 
+
+        <div class="second-header">
+            <div class="image box">
+                <img src="images/dtlpic1.jpg">
+            </div>
+            <div class="image box">
+                <img src="images/dtlpic2.png">
+            </div>
+            <div class="image box">
+                <img src="images/dtlpic3.jpg">
+            </div>
+
+        </div>
+
+        <div class="third-header">
+            <div class="slider main-slider" style="
+            --width: 100px;
+            --height: 100px;
+            --quantity: 10; 
+            ">
+
+                <div class="list">
+                    <div class="item" style="--position:1"><img src="images/slider1.png" alt=""></div>
+                    <div class="item" style="--position:2"><img src="images/slider2.png" alt=""></div>
+                    <div class="item" style="--position:3"><img src="images/slider3.png" alt=""></div>
+                    <div class="item" style="--position:4"><img src="images/slider4.png" alt=""></div>
+                    <div class="item" style="--position:5"><img src="images/slider5.png" alt=""></div>
+                    <div class="item" style="--position:6"><img src="images/slider6.png" alt=""></div>
+                    <div class="item" style="--position:7"><img src="images/slider7.png" alt=""></div>
+                    <div class="item" style="--position:8"><img src="images/slider8.png" alt=""></div>
+                    <div class="item" style="--position:9"><img src="images/slider9.png" alt=""></div>
+                    <div class="item" style="--position:10"><img src="images/slider10.png" alt=""></div>
+                </div>    
+            </div>
+        </div>
+
+        <h2 class="section-title">UPCOMING EVENTS</h2>
+        <div class="fourth-header">
+            <div class="wrapper">
+                <i id="left" class="fa-solid fa-angle-left"></i>
+                <div class="carousel">
+                    <img src="images/event1.jpg" alt="img">
+                    <img src="images/event 2.jpg" alt="img">
+                    <img src="images/event 3.jpg" alt="img">
+                    <img src="images/event 4.jpg" alt="img">
+                    <img src="images/event 4.jpg" alt="img">
+                    <img src="images/event 4.jpg" alt="img">
+                    <img src="images/event 4.jpg" alt="img">
+                    <img src="images/event 4.jpg" alt="img">
+                    <img src="images/event 4.jpg" alt="img">
+                </div>
+                <i id="right" class="fa-solid fa-angle-right"></i>
+            </div>
+        </div>
+
+        <footer class="footer">
+            <div class="footer-content">
+                <p>&copy; 2025 DTL. All rights reserved.</p>
+                <div class="footer-links">
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms of Service</a>
+                    <a href="#">Contact Us</a>
+                </div>
+            </div>
+        </footer>
+
+        <script>
+            document.addEventListener("DOMContentLoaded", function () {
+                const items = document.querySelectorAll(".slider .list .item");
+                const duration = 10; // Total animation duration for each item
+                const delayBetween = 1; // 1 second delay between each item
+        
+                items.forEach((item, index) => {
+                    const delay = index * delayBetween; // Increasing delay for each item
+                    item.style.animation = `autoRun ${duration}s linear infinite`;
+                    item.style.animationDelay = `${delay}s`;
+                });
+            });
+        </script>
+    </body>
+</html>
